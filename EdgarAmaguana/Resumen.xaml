@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EdgarAmaguana.Resumen">
+    <ContentPage.Content>
+    <StackLayout>
+        <Frame BackgroundColor="#6BB1D4" Padding="2" CornerRadius="0">
+            <Label x:Name="lblUsuario" HorizontalTextAlignment="End" TextColor="White" FontSize="18"/>
+        </Frame>
+
+        <Label Text="RESUMEN" HorizontalOptions="Start" FontSize="16"/>
+        <Label Text="" HorizontalOptions="Start" FontSize="14"/>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Nombre"  FontSize="14" Grid.Row="0" Grid.Column="0"/>
+                <Label x:Name="lblNombre"  FontSize="14" Grid.Row="0" Grid.Column="1" HorizontalTextAlignment="Center"/>
+
+                <Label Text="Total" FontSize="14" Grid.Row="1" Grid.Column="0"/>
+                <Label x:Name="lblCuota" FontSize="14" Grid.Row="1" Grid.Column="1" HorizontalTextAlignment="Center"/>
+
+            </Grid>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

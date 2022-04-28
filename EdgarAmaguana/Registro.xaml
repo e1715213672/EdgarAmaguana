@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EdgarAmaguana.Registro">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Frame BackgroundColor="#6BB1D4" Padding="2" CornerRadius="0">
+                <Label x:Name="lblUsuario" HorizontalTextAlignment="End" TextColor="White" FontSize="18"/>
+            </Frame>
+
+            <Label Text="REGISTRO" HorizontalOptions="Start" FontSize="16"/>
+            <Label Text="" HorizontalOptions="Start" FontSize="14"/>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Nombre"  FontSize="14" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtNombre" FontSize="14" Placeholder="Ingrese su nombre" Grid.Row="0" Grid.Column="1" HorizontalTextAlignment="Center"/>
+
+                <Label Text="Cuota Inicial" FontSize="14" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtCuota" FontSize="14" Placeholder="Ingrese la cuota" Keyboard="Numeric" Grid.Row="1" Grid.Column="1" HorizontalTextAlignment="Center"/>
+
+                <Label Text="Pago Mensual" FontSize="14" Grid.Row="2" Grid.Column="0"/>
+                <Label x:Name="lblPagoMensual" FontSize="14" VerticalOptions="Center" HorizontalOptions="Center" TextColor="SteelBlue" Grid.Row="2" Grid.Column="1"/>
+
+                <Button x:Name="btnCalcular" Text="Calcular Cuota" Clicked="btnCalcular_Clicked" Grid.Row="3" Grid.Column="1"/>
+
+            </Grid>
+            <Label Text="" HorizontalOptions="Start" FontSize="20"/>
+            
+            <Button x:Name="btnGuardar" Text="Guardar" Clicked="btnGuardar_Clicked" Grid.Row="3" Grid.Column="1"/>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
