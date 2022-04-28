@@ -57,8 +57,10 @@ namespace EdgarAmaguana
 
             else
             {
+                DisplayAlert("Notificación", "Elemento guardado con exito", "Cerrar");
                 await Navigation.PushAsync(new Resumen(lblUsuario.Text, txtNombre.Text, txtCuota.Text));
             }
+
         }
     }
 }
